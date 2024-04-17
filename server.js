@@ -9,7 +9,7 @@ app.use("/", require("./routes/routes"));
 app.use((req, res, next) => {
   return res.status(404).send("URL Not Found");
 });
-
+//running
 app.listen(3000, () => {
   console.log("Server running at http://localhost:3000");
 });
