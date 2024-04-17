@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 var app = express();
 const cors = require("cors");
 app.use(cors());
-// app.use(express.json());
 app.use(bodyParser.text({ type: "application/xml" }));
 app.use("/", require("./routes/routes"));
 app.use((req, res, next) => {
